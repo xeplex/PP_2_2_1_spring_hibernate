@@ -32,8 +32,8 @@ public class MainApp {
             System.out.println("Email = " + user.getEmail());
             System.out.println("User's car: " + user.getCar());
 
-            System.out.println(userService.getUserFromModelAndSeries("carModel3", 333));
         }
+        System.out.println(userService.getUserFromModelAndSeries("carModel4", 444));
 
         context.close();
     }
