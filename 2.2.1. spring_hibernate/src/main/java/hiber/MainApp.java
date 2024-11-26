@@ -27,15 +27,15 @@ public class MainApp {
         userService.add(new User("User5", "Lastname5", "user5@mail.ru",
                 new Car("carModel4", 444)));
 
-//        List<User> users = userService.listUsers();
-//        for (User user : users) {
-//            System.out.println("Id = " + user.getId());
-//            System.out.println("First Name = " + user.getFirstName());
-//            System.out.println("Last Name = " + user.getLastName());
-//            System.out.println("Email = " + user.getEmail());
-//            System.out.println("User's car: " + user.getCar());
-//
-//        }
+        List<User> users = userService.listUsers();
+        for (User user : users) {
+            System.out.println("Id = " + user.getId());
+            System.out.println("First Name = " + user.getFirstName());
+            System.out.println("Last Name = " + user.getLastName());
+            System.out.println("Email = " + user.getEmail());
+            System.out.println("User's car: " + user.getCar());
+
+        }
         System.out.println(userService.getByCar("carModel4", 444));
 
         context.close();
